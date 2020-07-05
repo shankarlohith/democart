@@ -5,19 +5,19 @@ import Infoblock from '../components/reuseable/infoblock'
 import Dinfoblock from '../components/reuseable/Dinfoblock'
 import {  graphql } from 'gatsby'
 import Layout from "../components/layout"
-import Coursecart from "../components/Cart/Coursescart"
+import Services from '../components/services/services'
 
 const IndexPage = ({data}) => (
   <Layout>
     <Herosec
     img={data.img.childImageSharp.fluid}
     title="There is no place to hide"
-    subtitle="Hacker"
+    subtitle="Services Hacker"
     heroclass="hero-bg"
     />
-   <Infoblock heading="About us"/>
-   <Coursecart courses={data.courses}/>
+   <Infoblock heading="Services"/>
     <Dinfoblock heading="This about col-8" phase="Get it"/>
+    <Services />
   </Layout>
 )
 
@@ -29,22 +29,6 @@ export const query = graphql`
               ...GatsbyImageSharpFluid_tracedSVG
             }
           }
-  }
-  courses:allContentfulCourses{
-    edges{
-      node{
-        id
-        title
-        description
-        price
-        category
-        image{
-          fixed(width:200,height:200){
-            ...GatsbyContentfulFixed_tracedSVG
-          }
-        }
-      }
-    }
   }
 }
 `
