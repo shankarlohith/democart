@@ -40,7 +40,7 @@ export const query = graphql`
         category
         image{
           fixed(width:200,height:200){
-            tracedSVG
+            ...GatsbyContentfulFixed_tracedSVG
           }
         }
       }
