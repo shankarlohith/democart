@@ -42,7 +42,7 @@ export default class Coursescart extends Component {
                                     <div class="card-body">
                                     <h5 class="card-title">{node.title}</h5>
                                     <p class="card-text">{node.description}</p>
-                                    <p class="card-text">  $ {node.price}</p>
+                                    <p class="card-text">  $$ {node.price}</p>
                                     </div>
                                     <div class="card-footer">
                                     <button 
