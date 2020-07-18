@@ -12,7 +12,7 @@ export default class navbar extends Component {
         menus : [
             {id:1,text:"Home",url:"/"},
             {id:2,text:"About Us",url:"/About"},
-            {id:3,text:"Services",url:"/services"},
+            //{id:3,text:"Services",url:"/services"},
             {id:4,text:"Contact",url:"/contact"}
         ]
     }
@@ -45,9 +45,7 @@ export default class navbar extends Component {
                                 )
                             }
                         )}
-                        <li className="nav-item-icon text-white">
-                            <Link to="/" className={FaOpencart}><FaOpencart/></Link>
-                        </li>
+                    
                     </ul>
                 </div>
             </nav>

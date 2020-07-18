@@ -14,7 +14,7 @@ export default class Coursescart extends Component {
         return (
             <section className="py-5">
                 <div className="container">
-                <Heading title="Courses" />
+                <Heading title="Ours Products" />
                 <div className="row">
                     {
                         this.state.courses.map(({node}) =>{
@@ -49,10 +49,10 @@ export default class Coursescart extends Component {
                                     data-item-id={node.id}
                                     data-item-name={node.title}
                                     data-item-price={node.price}
-                                    data-item-url="https://democartshop.netlify.app"
+                                    data-item-url="https://internshipdemo.netlify.app"
                                     data-item-image={node.image.fixed.src}
                                     className="btn btn-warning snipcart-add-item"
-                                    >Join us</button>
+                                    >Buy now</button>
                                     </div>
                                 </div>
                                 </div>

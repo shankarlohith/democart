@@ -11,13 +11,12 @@ const IndexPage = ({data}) => (
   <Layout>
     <Herosec
     img={data.img.childImageSharp.fluid}
-    title="There is no place to hide"
-    subtitle="Hacker"
+    title="Internship Demo"
+    subtitle="Demo Givin By Lohith"
     heroclass="hero-bg"
     />
    <Infoblock heading="About us"/>
    <Coursecart courses={data.courses}/>
-    <Dinfoblock heading="This about col-8" phase="Get it"/>
   </Layout>
 )
 
