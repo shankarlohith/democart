@@ -11,12 +11,12 @@ const AboutPage = ({data}) => (
   <Layout>
     <Herosec
     img={data.img.childImageSharp.fluid}
-    title="There is no place to hide"
-    subtitle=" Services "
+    title="Internship Demo"
+    subtitle=" Demo givien by Lohith "
     heroclass="hero-bg"
     />
    <Infoblock heading="About us"/>
-    <Dinfoblock heading="This about col-8" phase="Get it"/>
+  
     <About />
   </Layout>
 )
