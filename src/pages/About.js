@@ -17,7 +17,6 @@ const AboutPage = ({data}) => (
     />
    <Infoblock heading="About us"/>
   
-    <About />
   </Layout>
 )
 
